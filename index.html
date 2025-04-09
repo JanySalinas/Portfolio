@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <span>Jany Salinas</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#recommendations">Recommendations</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+
+        <button class="visit-btn" onclick="window.open('https://github.com/JanySalinas', '_blank')">
+            Visit Github
+        </button>
+        
+        <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-btn" class="dark-mode-btn">
+        <i class="fa-regular fa-moon"></i>
+    </button>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="jany.jpg" alt="">
+
+            <div class="info-box">
+
+                <div class="text">
+                    <!-- <h3>Hi I'm </h3> -->
+                    <h1> Jany Salinas</h1>
+                    <span>Backend Developer</span>
+                    <p>
+                        I'm Jany Salinas, a 26-year-old from Norway currently immersed in a one-year backend development program at Noroff Fagskole, set to wrap up this summer. I approach challenges with a meticulous, problem-solving mindset, driven by creativity and a passion for clean, efficient code. Collaboration and innovation are at the heart of my work philosophy—I thrive in environments where I can learn from others and contribute meaningfully to projects.
+                    </p>
+                    <p>
+                        Outside of coding, I enjoy staying active, exploring new technologies, and collaborating on creative projects. I'm particularly excited about working with Express.js, Sequelize, JavaScript, Nodejs and PassportJS, and I'm eager to deepen my expertise in backend frameworks and database management.
+                    </p>
+                    <p>
+                        Looking forward, my career goals include becoming a skilled backend developer, specializing in building robust and scalable web applications. I'm excited to continue refining my skills in areas like DevOps, cloud technologies, and building seamless API integrations. Ultimately, I aim to contribute to innovative projects that make a meaningful impact while continually expanding my knowledge and expertise.
+                    </p>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn" href="CV.pdf" download>
+                        Download CV
+                    </a>   
+
+                    <a class="btn" href="mailto:miss_jany48@hotmail.com?subject=Portfolio%20Contact" target="_blank">
+                        Contact
+                    </a>
+
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/JanySalinas" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jany-marcia-raka-salinas-48bb87356/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Backend Development</span>
+                    <h3>1 Year</h3>
+                    <p>Completed a one-year study in backend development, covering topics such as programming foundations, object-oriented programming, server-side programming, database management, API creation, and web security</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Development</span>
+                    <h3> 6 months</h3>
+                    <p>I have gained 6 months of frontend experience, working with technologies like HTML, CSS, JavaScript, and frameworks like Bootstrap to create responsive and dynamic user interfaces.</p>
+                </div>
+            </div>
+
+            <img src="jany.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="recommendations" class="recommendations">
+
+        <h2 class="section-title">Recommendations</h2>
+
+        <div class="recommendations-grid">
+            
+            <div class="recommendation-card">
+                <p class="recommender-quote">
+                    I’ve had the pleasure of teaching Jany Salinas in our first-year Backend Development with JavaScript program. She is a dedicated and thoughtful student who brings a consistent level of care and focus to her work.
+                </p>
+                <p class="recommender-quote">
+                    Jany applies herself with genuine intention and is eager to learn – not just for the sake of learning, but to create and explore. She contributes to class discussions and interacts well with her peers, bringing a friendly and open presence to the classroom.
+                </p>
+                <p class="recommender-quote">
+                    Her assignments are often submitted early, and she consistently aims to do her best. She doesn’t shy away from challenges and puts effort into understanding the material thoroughly.
+                </p>
+                <p class="recommender-quote">
+                    Jany is a motivated and reliable student, and I believe she would be a great addition to any team looking for someone who is passionate about development and ready to grow.
+                </p>
+                <p class="recommender-signature">
+                    — Nicholas Lennox, Lecturer for Backend Development at Noroff Vocational School.
+                </p>
+            </div>
+            <!-- Add more recommendation cards as needed -->
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-info">
+
+          <div class="grid">
+            <div class="grid-card">
+              <i class="fa-solid fa-code"></i>
+              <span>Node.js</span>
+              <h3>Intermediate</h3>
+              <p>Experience building RESTful APIs, middleware, and integrating databases with Express.</p>
+            </div>
+
+            <div class="grid-card">
+              <i class="fa-solid fa-code"></i>
+              <span>Rest API'S</span>
+              <h3>Intermediate</h3>
+              <p>Designed and developed RESTful APIs for data retrieval and manipulation, ensuring efficient communication between front-end and back-end systems.</p>
+            </div>
+            
+            <div class="grid-card">
+                <i class="fa-solid fa-code"></i>
+                <span>JavaScript</span>
+                <h3>Intermediate</h3>
+                <p>Familiar with JavaScript for creating interactive web elements and enhancing user experiences. Gaining experience in DOM manipulation, event handling, and working with libraries like jQuery to streamline functionality.</p>
+              </div>
+
+              <div class="grid-card">
+                <i class="fa-solid fa-code"></i>
+                <span>CSS</span>
+                <h3>Intermediate</h3>
+                <p>Skilled in using CSS to create responsive layouts, style websites, and implement custom designs. Actively learning and gaining experience with flexbox, grid, and media queries for mobile-first, adaptive design.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="projects" class="projects">
+
+    <h2 class="section-title">Recent Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="jazzbar.jpg" alt="">
+            <h3>Project Brews & Blues</h3>
+            <p>Brews&Blues is a full-stack web application I built to create an engaging online platform for showcasing live music events and craft beers. The website connects users with upcoming performances while also providing detailed information about various craft beers.</p>
+            <div class="btn-group">
+                <div class="btn">Live Demo</div>
+                <div class="btn">Github Repo</div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="todo.jpg" alt="">
+            <h3>Project To-Do list APi </h3>
+            <p>A RESTful To-Do API built with Express.js and Sequelize, providing CRUD operations for managing tasks. It supports user authentication with JWT, allowing users to create, read, update, and delete their personal to-do lists.</p>
+            <div class="btn-group">
+                <div class="btn">Live Demo</div>
+                <div class="btn">Github Repo</div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="blog.jpg" alt="">
+            <h3>Project Wildcard Journal Blog </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae.</p>
+            <div class="btn-group">
+                <div class="btn">Live Demo</div>
+                <div class="btn">Github Repo</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+    
+            <div class="input">
+                <input type="text" placeholder="Enter your email" id="userEmail">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+    
+            <!-- Note: the href is removed so JS can construct it dynamically -->
+            <a class="btn" id="submitEmail">
+                Submit
+            </a>
+        </div>
+    </section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Jany Salinas</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
