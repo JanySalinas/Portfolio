@@ -662,19 +662,21 @@ footer {
      display: block;
    }
    
-   /* Style the nav-links for mobile */
    .nav-links {
-     position: absolute;
-     top: 100%;
-     left: 0;
-     width: 100%;
-     padding: 1rem 0;
-     background-color: rgba(0, 0, 0, 0.9);
-     flex-direction: column;
-     text-align: center;
-     border-radius: 3rem;
-     display: none;
-   }
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      text-align: center;
+      border-radius: 3rem;
+      display: none;
+      /* New additions to handle overflow */
+      max-height: 70vh;       /* Limit height so it doesn't take over the screen */
+      overflow-y: auto;       /* Allow scrolling only within the nav-links container */
+    }
    
    /* When the mobile menu is active */
    .nav-links.active {
@@ -686,10 +688,10 @@ footer {
    }
    
    .nav-links li a {
-     font-size: 1.2rem;
-     padding: 0.5rem 0;
-     display: block;
-     width: 100%;
-     color: white;
-   }
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      display: block;
+      width: 100%;
+      color: white;
+    }
  }
