@@ -674,7 +674,7 @@ footer {
       border-radius: 3rem;
       display: none;
       /* New additions to handle overflow */
-      max-height: 70vh;       /* Limit height so it doesn't take over the screen */
+      max-height: 100vh;       /* Limit height so it doesn't take over the screen */
       overflow-y: auto;       /* Allow scrolling only within the nav-links container */
     }
    
