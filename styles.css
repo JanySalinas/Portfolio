@@ -695,3 +695,14 @@ footer {
       color: white;
     }
  }
+ /* Footer Contact Link Background */
+footer li a[href="#contact"] {
+   background-color: #f7f7f7;  /* Light grey in light mode */
+   padding: 0.5rem 1rem;
+   border-radius: 3rem;
+ }
+ 
+ /* Dark mode override for the Contact link */
+ :root.dark footer li a[href="#contact"] {
+   background-color: #2a2a2a;  /* Dark grey in dark mode */
+ }
