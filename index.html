@@ -7,7 +7,7 @@
     <title>Portfolio Website </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <script src="https://unpkg.com/scrollreveal"></script>
 <body>
     <header class="header">
         <a href="#" class="logo"> <span>Jany Salinas</span></a>
@@ -22,7 +22,7 @@
             </li>
 
             <li>
-                <a href="#recommendations">Recommendations</a>
+                <a href="#recommendations">Testimonials</a>
             </li>
 
             <li>
@@ -77,10 +77,17 @@
                     <a class="btn" href="CV.pdf" download>
                         Download CV
                     </a>   
+                    <button id="contactInfoBtn" class="btn">Contact Info</button>
 
-                    <a class="btn" href="mailto:miss_jany48@hotmail.com?subject=Portfolio%20Contact" target="_blank">
-                        Contact
-                    </a>
+                    <div id="contactModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h2>Contact Information</h2>
+                          <p><strong>Phone:</strong>  90 26 25 11</p>
+                          <p><strong>Address:</strong> Mauravegen </p>
+                          <p><strong>Email:</strong> jany.salinas@hotmail.com</p>
+                        </div>
+                      </div>
 
                 </div>
 
@@ -126,7 +133,9 @@
 
     <section id="recommendations" class="recommendations">
 
-        <h2 class="section-title">Recommendations</h2>
+        <h2 class="section-title">Testimonials</h2>
+
+      <h3 class="recommendation-title">Noroff Oslo</h3>
 
         <div class="recommendations-grid">
             
@@ -206,6 +215,9 @@
                 Brews & Blues is a full-stack web application I built to create an engaging online platform for showcasing live music events and craft beers.
                 The website connects users with upcoming performances while also providing detailed information about various craft beers.
             </p>
+            <p>
+                This project was built using Ejs, CSS, and JavaScript for the front end, with Node.js, Express, and a MySQL database for the back end.
+              </p>
             <div class="btn-group">
                 <a href="https://brews-blues.onrender.com/drinks" target="_blank" class="btn">Live Demo</a>
                 <a href="https://github.com/JanySalinas/Brews-Blues" target="_blank" class="btn">GitHub Repo</a>
@@ -223,9 +235,10 @@
         </div> -->
 
         <div class="project-card">
-            <img src="blog.jpg" alt="">
-            <h3>Project WDT</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae.</p>
+            <img src="clockin.jpg" alt="">
+            <h3>Project Clock In & Out</h3>
+            <p>The Reception Management Dashboard is a web application for tracking staff attendance, managing deliveries, and providing real-time notifications. Designed with Bootstrap, JavaScript, and jQuery, this app offers an intuitive interface to enhance office operations.</p>
+            <p> Log in to see the dasboard for reservations: username: admin and password: password </p>
             <div class="btn-group">
                 <a href="https://wdt-2ngu.onrender.com/wdt.html#" target="_blank" class="btn">Live Demo</a>
                 <a href="https://github.com/JanySalinas/WDT-.git" target="_blank" class="btn">Github Repo</a>
@@ -236,20 +249,24 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contact Me</h2>
-    
-            <div class="input">
-                <input type="text" placeholder="Enter your email" id="userEmail">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-    
-            <!-- Note: the href is removed so JS can construct it dynamically -->
-            <a class="btn" id="submitEmail">
-                Submit
-            </a>
-        </div>
-    </section>
+        <h2 class="section-title">Contact Me</h2>
+        
+        <form id="contactForm" class="input-box" action="https://formspree.io/f/xwplzapb" method="POST">
+          <div class="input-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          
+          <button type="submit" class="btn">Send Message</button>
+          <!-- Message container below the button -->
+          <div id="form-message" class="form-message"></div>
+        </form>
+      </section>
+
+</section>
+      
 
     <footer>
 
