@@ -841,15 +841,64 @@ footer {
 }
 @media(max-width:600px){
    section {
+       max-width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 2rem 5%;
        text-align: center;
-       padding-left: 5%;
-       padding-right: 5%;
-       margin: 0 auto;
    }
 }
+
 footer{
    background: linear-gradient(to right, #ffffff, #696363);
    background-size: 100% 100%;
    background-repeat: no-repeat;
    /* ...existing styles... */
 }
+
+
+html, body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+
+@media (max-width: 600px) {
+  /* Keep header centered */
+  header {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    margin: 0;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Let nav-links wrap if needed */
+  .nav-links {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Ensure footer links fit on screen */
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Slightly narrower section padding */
+  section {
+    padding: 7rem 5%; /* top gap for the fixed header */
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+ }
