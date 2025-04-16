@@ -902,3 +902,9 @@ html, body {
     box-sizing: border-box;
   }
  }
+ 
+ :root.dark footer,
+:root.dark footer ul li a,
+:root.dark footer p {
+    color: #000 !important;
+}
