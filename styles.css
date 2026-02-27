@@ -85,7 +85,7 @@ li a:hover::before{
  }
 
  section{
-    min-height: 100vh;
+    min-height: 89vh;
     padding: 8rem 12%;
     width: 100%;
     position: relative;
@@ -907,4 +907,59 @@ html, body {
 :root.dark footer ul li a,
 :root.dark footer p {
     color: #000 !important;
+}
+
+/* Soft Skills Section */
+.soft-skills-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+}
+
+.soft-skill-card {
+   padding: 2rem;
+   border: 2px solid black;
+   border-radius: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   gap: 1rem;
+   background-color: #ffffff;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.soft-skill-card:hover {
+   background-color: black;
+   color: white;
+   transform: translateY(-10px) scale(1.02);
+}
+
+.soft-skill-card i {
+   font-size: 2.5rem;
+   background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+   background-clip: text;
+   color: transparent;
+}
+
+.soft-skill-card h3 {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.soft-skill-card p {
+   font-size: 1rem;
+   line-height: 1.5;
+}
+
+/* Dark mode for soft skills */
+:root.dark .soft-skill-card {
+   border: 2px solid var(--text-color);
+   color: #333333;
+}
+
+:root.dark .soft-skill-card:hover {
+   background-color: #ffffff;
+   color: #333;
 }

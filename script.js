@@ -77,7 +77,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 // Get modal elements
 const modal = document.getElementById("contactModal");
-const btn = document.getElementById("contactInfoBtn");
 const closeSpan = document.querySelector(".modal .close");
 
 // Open modal on button click
