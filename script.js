@@ -75,27 +75,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   });
 });
 
-// Get modal elements
-const modal = document.getElementById("contactModal");
-const closeSpan = document.querySelector(".modal .close");
-
-// Open modal on button click
-btn.addEventListener("click", function() {
-  modal.style.display = "block";
-});
-
-// Close modal when clicking on (x)
-closeSpan.addEventListener("click", function() {
-  modal.style.display = "none";
-});
-
-// Close modal when clicking outside the modal content
-window.addEventListener("click", function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
-
 // Example in your main script fil
   ScrollReveal().reveal('section', {
     distance: '20px',

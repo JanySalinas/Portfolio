@@ -85,8 +85,8 @@ li a:hover::before{
  }
 
  section{
-    min-height: 89vh;
-    padding: 8rem 12%;
+    min-height: auto;
+    padding: 6rem 12%;
     width: 100%;
     position: relative;
  }
@@ -107,11 +107,27 @@ li a:hover::before{
    margin-bottom: 1rem; /* adjust the spacing as needed */
    line-height: 1;
 }
-/* Add vertical spacing between sections */
+
 section {
    margin-top: 3rem;
    margin-bottom: 3rem;
 }
+#skills {
+  padding-top: 3rem;
+}
+
+#projects {
+  padding-bottom: 5rem;
+}
+
+#skills {
+  padding-bottom: 8rem;
+}
+
+#soft-skills {
+  padding-top: 5rem;
+}
+
 
  .about img{
     width: 22vw;
